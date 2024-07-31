@@ -13,14 +13,13 @@ void main(void)
 {
 	init_config();
     unsigned long int i = 0,adc_value;
-	unsigned int r1,r2;
-    float ip_volt,volt;
+	float inputp_volt,op_volt;
     
     while(1)
     {
         display(ssd);
         volt = (adc_value * 5.0) / 1023.0;
-        ip_volt = volt * ((100.0 + 3.3) / 3.3); 
+        inpup_volt = op_volt * ((100.0 + 3.3) / 3.3); 
         for(i=500;i--;);
     }
 }
